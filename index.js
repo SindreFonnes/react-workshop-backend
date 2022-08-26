@@ -16,3 +16,5 @@ const apiBasePath = "/api";
 app.get(`${apiBasePath}/hello`, (req, res) => {
     res.send({hello: "world"});
 })
+
+app.listen(port, () => console.log(`listening on port ${port}...`));
